@@ -1,0 +1,298 @@
+*{
+    font-family: poppins;
+}
+a {
+    text-decoration: none;
+}
+
+.primary-color {
+    color: #2684f0;
+}
+
+.main {
+
+    background-color: white;
+    height: 100vh;
+}
+
+.landing {
+    margin-top: 2.5rem !important;
+}
+
+
+.log {
+    cursor: pointer;
+
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2684f0;
+        margin-top: 1rem;
+    }
+
+    p {
+        margin-top: -15px;
+        color: black;
+    }
+
+    @media screen and (max-width: 768px) {
+        h1 {
+            font-size: 20px;
+        }
+    }
+}
+
+.logo {
+    padding-top: 1rem;
+    cursor: pointer;
+
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2684f0;
+    }
+
+    p {
+        margin-top: -15px;
+        color: black;
+    }
+
+}
+
+.log-landing {
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2684f0;
+        margin-top: 2rem;
+    }
+
+    p {
+        margin-top: -15px;
+    }
+}
+
+.text {
+    padding-top: 16vh;
+
+    h2 {
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 2rem;
+    }
+}
+
+.image {
+    img {
+        width: 100%;
+    }
+}
+
+.btn-container {
+    button {
+        margin-right: 2rem;
+    }
+
+    margin-bottom: 28vh;
+
+}
+
+.btn-borded {
+    padding: 10px 10px;
+    background-color: #2684f0;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+
+    a {
+        color: white;
+    }
+}
+
+.btn-outlined {
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+// ......... scroll bar ...............
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #2684f0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .home {
+
+        .content {
+            display: flex;
+            flex-direction: column-reverse;
+
+            .text {
+                padding-top: 0;
+
+                h2 {
+                    font-size: 30px;
+                    // margin-bottom: 0;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .image {
+            margin-top: -2rem;
+        }
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        // padding: 2rem;
+        margin-top: 2rem !important;
+
+        .left {
+            display: none !important;
+            justify-content: space-between !important;
+
+        }
+
+        .right {
+            display: flex;
+            justify-content: center !important;
+
+        }
+
+        .icon {
+            font-size: 12px;
+            margin-top: -3rem;
+        }
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+
+        .left {
+            margin-right: 0 !important;
+        }
+
+        .right {
+            margin-left: 0 !important;
+        }
+    }
+}
+
+button {
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #3BCAB3;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+// ..............loader..................
+
+/* Style the modal */
+.modal {
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fefefe;
+}
+
+.modal-text {
+    margin-left: 14px;
+    font-size: 24px;
+}
+
+/* Create the circle loader with pure CSS */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 8px solid #ddd;
+    border-top: 8px solid #2196f3;
+    border-bottom: 8px solid #2196f3;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

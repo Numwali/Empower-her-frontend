@@ -1,0 +1,163 @@
+// ....... login ..........
+.login-form {
+    max-height: 100vh;
+    .text-container {
+        background-color: #2684f0;
+        min-height: 73vh;
+        margin-bottom: 3.2rem ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3.5rem;
+        color: white;
+    }
+
+    .form-container {
+        min-height: 73vh;
+        margin-bottom: 3.2rem ;
+        padding: 0.5rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        // border-radius: 10px;
+        overflow: hidden;
+
+        .title {
+            margin-bottom: 3rem;
+            color: #2684f0;
+            font-size: large;
+            font-weight: bold;
+        }
+
+
+        .form-group {
+            width: 100%;
+            margin-top: 0.1rem;
+
+            input:focus {
+                outline: none;
+            }
+
+            input[type="submit"],button {
+                background-color: #2684f0;
+                color: #fff;
+            }
+        }
+
+        .sign-up-link {
+            padding-top: 1rem;
+
+            span {
+                a {
+                    color: #2684f0;
+                }
+            }
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between !important;
+            width: 100%;
+
+            span,
+            a {
+                color: #2684f0;
+            }
+
+
+
+            .left {
+                margin-right: 1rem;
+            }
+
+            .right {
+                margin-left: 1rem;
+
+            }
+        }
+    }
+}
+
+// ........... forget .............
+.forget-form {
+    height: 73vh;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+
+    // background-color:red;
+    .image {
+        width: 50%;
+
+        img {
+            width: 80%;
+        }
+
+    }
+
+    .form-element {
+        width: 50%;
+        padding: 3rem;
+
+        .title {
+            margin-bottom: 1rem;
+            color: #2684f0;
+            font-size: large;
+            font-weight: bold;
+        }
+
+
+        .form-group {
+            width: 100%;
+            margin-top: 0.1rem;
+
+            input:focus {
+                outline: none;
+            }
+
+            input[type="submit"],button {
+                background-color: #2684f0;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// ...........media query .............
+
+@media screen and (max-width: 768px) {
+    .login-form {
+        .text-container {
+            display: none;
+        }
+
+        .form-container {
+            margin: 1rem 0;
+            padding: 0 1rem;
+        }
+    }
+
+    .forget-form {
+        height: 60vh;
+        padding: 0 0;
+
+        .image {
+            display: none;
+        }
+
+        .form-element {
+            width: 100%;
+            padding: 1rem;
+        }
+
+
+    }
+}
