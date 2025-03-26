@@ -29,7 +29,7 @@ const Profile = ({ children }) => {
             <div className="header-flex">
               <div className="content">
                 <img
-                  src={user.profileImage ? user.profileImage : img1}
+                  src={user?.profileImage ? user?.profileImage : img1}
                   alt="user avatar"
                   width="80"
                 />
@@ -41,7 +41,7 @@ const Profile = ({ children }) => {
                   <p className="flex gap-3">
                     <b className="text-black">@ {user?.username} </b>
                     {user?.role === "therapist" &&
-                      <span className="text-primary underline">{userPosts.length} Resource(s)</span>
+                      <span className="text-primary underline">{userPosts?.length} Resource(s)</span>
                     }
                   </p>
                 </span>
@@ -52,18 +52,18 @@ const Profile = ({ children }) => {
                       <i className="fa-regular fa-calendar-days"></i> Date Of
                       Birth:
                     </span>{" "}
-                    {user.dob}
+                    {user?.dob}
                   </p>
                   <p className="dark:text-dark-gray-300">
                     <span className="font-medium text-gray-600 text-sm">
                       <i className="fa-sharp fa-solid fa-location-dot"></i>{" "}
                       Location:
                     </span>{" "}
-                    {user.address}
+                    {user?.address}
                   </p>
                 </p>
                 <p className="text-xs text-gray-600">
-                  {user.interests.slice(0, 4)}, etc...
+                  {user?.interests?.slice(0, 4)}, etc...
                 </p>
               </div>
               <div>
